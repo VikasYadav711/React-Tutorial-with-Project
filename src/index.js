@@ -31,16 +31,21 @@ const BookList= ()=>{
     );
 };
 
+const author='Kristin Hannah';
+const title='The Women';
+const img='./images/1.jpg';
+
 const Book=()=>{
     return (
         <article className='book'>
-            <Image/>
-            <Title/>
-            <Author/>
+            <img src={img} alt='title'/>
+            <h2>{title}</h2>
+            <h4>{author}</h4>
+            
         </article>
     );
 };
-
+/*
 const Image=()=>{
     return(
         <img src='./images/1.jpg' 
@@ -63,7 +68,7 @@ const Author=()=>{
 
     return <h4 style={inlineHeadingStyles}>Kristin Hannah</h4>;
 };
-
+*/
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
